@@ -9,10 +9,10 @@ public class MatrixPrint {
        for(int i=1;i<=n;i++){
            int k=1;
            while(k++ <= i){
-               System.out.print(c1);
+               System.out.print(c1+" ");
            }
            while(k++ <= n+1){
-               System.out.print(c2);
+               System.out.print(c2+" ");
            }
            System.out.println();
 

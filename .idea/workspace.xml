@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53061e1d-7f74-4627-afe1-5ea2ad78e4c3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/CollatzSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoraGarden.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LabAllocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LabAllocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MatrixPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MatrixPrint.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +37,21 @@
     "RunOnceActivity.ShowReadmeOnStart": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MatrixPrint">
+  <component name="RunManager" selected="Application.DoraGarden">
+    <configuration name="CollatzSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CollatzSequence" />
+      <module name="JavaClass" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DoraGarden" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DoraGarden" />
+      <module name="JavaClass" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LabAllocation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LabAllocation" />
       <module name="JavaClass" />
@@ -59,6 +75,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DoraGarden" />
+        <item itemvalue="Application.CollatzSequence" />
         <item itemvalue="Application.MatrixPrint" />
         <item itemvalue="Application.WeekSalary" />
         <item itemvalue="Application.LabAllocation" />
