@@ -40,7 +40,7 @@ public class LabAllocation {
             v3=n;
         }
 
-        ans=v1<v2?((v1<v2)? "L1": "L3"):((v2<v3)? "L2":"L3");
+        ans=v1<v2?((v1<v3)? "L1": "L3"):((v2<v3)? "L2":"L3");
         System.out.println(ans);
 
 

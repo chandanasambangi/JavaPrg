@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53061e1d-7f74-4627-afe1-5ea2ad78e4c3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MatrixPrint.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LabAllocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LabAllocation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
