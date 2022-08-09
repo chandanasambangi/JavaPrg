@@ -35,6 +35,8 @@ public class Student {
         System.out.println("Top 3 performers in English :");
         topPerformers(marks,0);
 
+        belowAveragePerformers(marks);
+
 
     }
     public static void total(int[][] marks){
@@ -87,6 +89,17 @@ public class Student {
         System.out.println("Second performer is Student"+ (subjectMarksArray[1][0]+1));
         System.out.println("Third performer is Student"+ (subjectMarksArray[2][0]+1));
 
+    }
+    public static void belowAveragePerformers(int[][] marks){
+        System.out.println("Below Average Performers: ");
+        for(int i=0;i<15;i++){
+            for(int j=0;j<5;j++){
+                if(marks[i][j] < 50){
+                    System.out.println("Student"+(i+1)+" Total"+(marks[i][5]));
+                    break;
+                }
+            }
+        }
     }
 
 }
