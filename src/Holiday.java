@@ -41,6 +41,14 @@ public class Holiday {
  class ImplementHoliday{
      public static void main(String[] args) {
          Holiday holiday = new Holiday("Independence day",4,"July");
+         Holiday holiday1 = new Holiday("Republic day",5,"June");
+         Holiday holiday2 = new Holiday("Friend ship day",1,"August");
+        System.out.println( holiday.inSameMonth(holiday1,holiday2));
+        Holiday[] holidayarray = new Holiday[3];
+        holidayarray[0]=holiday;
+         holidayarray[1]=holiday1;
+         holidayarray[2]=holiday2;
+         System.out.println(holiday.avgDate(holidayarray));
      }
 
 }
