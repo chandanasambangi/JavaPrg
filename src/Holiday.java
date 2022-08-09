@@ -25,8 +25,14 @@ public class Holiday {
         this.day=day;
         this.month=month;
     }
+    public static boolean inSameMonth(Holiday holiday1,Holiday holiday2){
+        return( (holiday1.month).equals(holiday2.month) );
+    }
 
 }
  class ImplementHoliday{
-    Holiday holiday = new Holiday("Independence day",4,"July");
+     public static void main(String[] args) {
+         Holiday holiday = new Holiday("Independence day",4,"July");
+     }
+
 }
