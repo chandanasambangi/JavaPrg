@@ -7,7 +7,7 @@ public class MeanMedianMode {
         for(int i=0;i<size;i++){
             array[i]=sc.nextInt();
         }
-        System.out.println("mean : " + mean(array));
+        System.out.println("mean is : " + mean(array));
 
     }
     public static double mean(int[] array){
