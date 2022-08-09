@@ -24,7 +24,16 @@ public class Student {
         System.out.println("Average of Social Science Marks : "+averageOfSubject(marks,3));
         System.out.println("Average of English Marks : "+averageOfSubject(marks,4));
 
-        
+        System.out.println("Top 3 performers in Maths :");
+        topPerformers(marks,0);
+        System.out.println("Top 3 performers in Computer Science :");
+        topPerformers(marks,0);
+        System.out.println("Top 3 performers in Science :");
+        topPerformers(marks,0);
+        System.out.println("Top 3 performers in Social Science :");
+        topPerformers(marks,0);
+        System.out.println("Top 3 performers in English :");
+        topPerformers(marks,0);
 
 
     }
@@ -41,7 +50,7 @@ public class Student {
         }
         Arrays.sort(rankArray, new Comparator<int[]>() {
             public int compare(final int[] entry1, final int[] entry2) {
-                if (entry1[1] > entry2[1])
+                if (entry1[1] < entry2[1])
                     return 1;
                 else
                     return -1;
@@ -59,6 +68,25 @@ public class Student {
             sum+=marks[i][subjectCode];
         }
         return (sum/15);
+    }
+    public static void topPerformers(int[][] marks,int subjectCode){
+        int[][] subjectMarksArray=new int[15][2];
+        for(int i=0;i<15;i++){
+            subjectMarksArray[i][0]=i;
+            subjectMarksArray[i][1]=marks[i][subjectCode];
+        }
+        Arrays.sort(subjectMarksArray, new Comparator<int[]>() {
+            public int compare(final int[] entry1, final int[] entry2) {
+                if (entry1[1] < entry2[1])
+                    return 1;
+                else
+                    return -1;
+            }
+        });
+        System.out.println("First performer is Student"+ (subjectMarksArray[0][0]+1));
+        System.out.println("Second performer is Student"+ (subjectMarksArray[1][0]+1));
+        System.out.println("Third performer is Student"+ (subjectMarksArray[2][0]+1));
+
     }
 
 }
