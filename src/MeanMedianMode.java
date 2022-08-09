@@ -11,7 +11,7 @@ public class MeanMedianMode {
         System.out.println("mean is : " + mean(array));
         //median
         Arrays.sort(array);
-        System.out.println("median is : " + median(array));
+        System.out.println("median  : " + median(array));
 
 
 
