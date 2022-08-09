@@ -12,6 +12,8 @@ public class MeanMedianMode {
         //median
         Arrays.sort(array);
         System.out.println("median  : " + median(array));
+        //mode
+        System.out.println("mode  : " + mode(array));
 
 
 
@@ -35,5 +37,23 @@ public class MeanMedianMode {
             result= (double)(array[(int)size/2]);
         }
         return result;
+    }
+    public static int mode(int[] array){
+        int maxValue=0;
+        int maxCount=0;
+        int count=0;
+        for (int i = 0; i < array.length; ++i) {
+            count = 0;
+            for (int j = 0; j < array.length; ++j) {
+                if (array[j] == array[i])
+                    ++count;
+            }
+            if (count > maxCount) {
+                maxCount = count;
+                maxValue = array[i];
+            }
+        }
+
+        return maxValue;
     }
 }
