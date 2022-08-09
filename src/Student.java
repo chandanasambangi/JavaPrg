@@ -17,6 +17,14 @@ public class Student {
         }
         total(marks);
         rank(marks);
+        System.out.println("Average of class :"+(total/15));
+        System.out.println("Average of Maths Marks : "+averageOfSubject(marks,0));
+        System.out.println("Average of Computer science Marks : "+averageOfSubject(marks,1));
+        System.out.println("Average of Science Marks : "+averageOfSubject(marks,2));
+        System.out.println("Average of Social Science Marks : "+averageOfSubject(marks,3));
+        System.out.println("Average of English Marks : "+averageOfSubject(marks,4));
+
+        
 
 
     }
@@ -43,6 +51,14 @@ public class Student {
             System.out.println( "rank "+(i+1)+" - Student"+(rankArray[i][0] +1 ));
         }
 
+    }
+    public static double averageOfSubject(int[][] marks,int subjectCode){
+
+        int sum=0;
+        for(int i=0;i<15;i++){
+            sum+=marks[i][subjectCode];
+        }
+        return (sum/15);
     }
 
 }
