@@ -28,6 +28,14 @@ public class Holiday {
     public static boolean inSameMonth(Holiday holiday1,Holiday holiday2){
         return( (holiday1.month).equals(holiday2.month) );
     }
+    public static double avgDate(Holiday[] holidayarray){
+        int sum=0;
+        for(int i=0;i<holidayarray.length;i++){
+            sum=sum+holidayarray[i].day;
+        }
+        double result=(sum)/(holidayarray.length);
+        return result;
+    }
 
 }
  class ImplementHoliday{
