@@ -7,12 +7,14 @@ abstract class Account{
     }
     public abstract double calculateInterest(double period);
     public void deposit(int amount){
+
         balance+=amount;
     }
 }
 class Savings extends Account{
      int interest=3;
     public Savings(String name,int balance){
+
         super(name,balance);
     }
     public  double calculateInterest(double period){
@@ -23,9 +25,11 @@ class Savings extends Account{
 class Current extends Account{
     static int interest=0;
     public Current(String name,int balance){
+
         super(name,balance);
     }
     public  double calculateInterest(double period){
+
         return 0;
     }
     public boolean withDrawCheck(double amount){
